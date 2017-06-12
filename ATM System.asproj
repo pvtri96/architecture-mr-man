@@ -46,13 +46,17 @@
       </technicalConstraintContainer>
     </architecturalDriversSpec>
     <folderContainer>
-      <folders/>
+      <folders perspective="Static">
+        <viewInfos title="Transaction Module">
+          <view href="views/Transaction%20Module.asview#/0"/>
+        </viewInfos>
+        <viewInfos title="Validation Module">
+          <view href="views/Validation%20Module.asview#/0"/>
+        </viewInfos>
+      </folders>
       <folders perspective="Dynamic">
         <viewInfos title="Components and Connectors">
           <view href="views/Components%20and%20Connectors.asview#/0"/>
-        </viewInfos>
-        <viewInfos title="Transactions">
-          <view href="views/Transactions.asview#/0"/>
         </viewInfos>
       </folders>
       <folders perspective="Physical"/>
