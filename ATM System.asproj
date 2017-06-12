@@ -47,11 +47,11 @@
     </architecturalDriversSpec>
     <folderContainer>
       <folders>
-        <viewInfos title="Transaction Module">
-          <view href="views/Transaction%20Module.asview#/0"/>
-        </viewInfos>
         <viewInfos title="Validation Module">
           <view href="views/Validation%20Module.asview#/0"/>
+        </viewInfos>
+        <viewInfos title="Transaction Module">
+          <view href="views/Transaction%20Module.asview#/0"/>
         </viewInfos>
       </folders>
       <folders perspective="Dynamic">
