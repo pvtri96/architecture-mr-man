@@ -63,7 +63,14 @@
     <assignmentContainer/>
   </model:ArchitectureStudioProject>
   <model:TypeRepository name="CUSTOM">
-    <typeCategories name="DEFAULT_CATEGORY"/>
+    <typeCategories name="DEFAULT_CATEGORY">
+      <elementTypes name="Classes" description="Classes" icon="images\Static\Classes.gif">
+        <visualization path="images\Static\Classes.svg"/>
+        <elements href="views/Validation%20Module.asview#/0/@viewItems.6"/>
+        <elements href="views/Validation%20Module.asview#/0/@viewItems.7"/>
+        <elements href="views/Validation%20Module.asview#/0/@viewItems.8"/>
+      </elementTypes>
+    </typeCategories>
     <typeCategories name="DEFAULT_CATEGORY" perspective="Dynamic"/>
     <typeCategories name="DEFAULT_CATEGORY" perspective="Physical"/>
   </model:TypeRepository>
