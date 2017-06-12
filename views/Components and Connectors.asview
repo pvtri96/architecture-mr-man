@@ -7,10 +7,10 @@
     <viewItems xsi:type="model:Element" name="Card Reader" sRelationships="/0/@viewItems.7" tRelationships="/0/@viewItems.13">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Bank system" sRelationships="/0/@viewItems.11" tRelationships="/0/@viewItems.10 /0/@viewItems.16 /0/@viewItems.17">
+    <viewItems xsi:type="model:Element" name="Bank system" sRelationships="/0/@viewItems.11 /0/@viewItems.17" tRelationships="/0/@viewItems.10 /0/@viewItems.16">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.3"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="ATM Control" sRelationships="/0/@viewItems.10 /0/@viewItems.12 /0/@viewItems.16 /0/@viewItems.17 /0/@viewItems.18" tRelationships="/0/@viewItems.9 /0/@viewItems.11 /0/@viewItems.15">
+    <viewItems xsi:type="model:Element" name="ATM Control" sRelationships="/0/@viewItems.10 /0/@viewItems.12 /0/@viewItems.16 /0/@viewItems.18" tRelationships="/0/@viewItems.9 /0/@viewItems.11 /0/@viewItems.15 /0/@viewItems.17">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
     <viewItems xsi:type="model:Element" name="ATM Transaction" sRelationships="/0/@viewItems.15 /0/@viewItems.19" tRelationships="/0/@viewItems.14 /0/@viewItems.18">
@@ -50,7 +50,7 @@
     <viewItems xsi:type="model:Relationship" name="2.3 Send Transaction Request" source="/0/@viewItems.3" target="/0/@viewItems.2">
       <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@relationshipTypes.0"/>
     </viewItems>
-    <viewItems xsi:type="model:Relationship" name="2.4 Response Transaction Request" source="/0/@viewItems.3" target="/0/@viewItems.2">
+    <viewItems xsi:type="model:Relationship" name="2.4 Response Transaction Request" source="/0/@viewItems.2" target="/0/@viewItems.3">
       <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@relationshipTypes.1"/>
     </viewItems>
     <viewItems xsi:type="model:Relationship" name="2.5 Resolve Transaction Response " source="/0/@viewItems.3" target="/0/@viewItems.4">
@@ -196,19 +196,19 @@
       </children>
       <styles xsi:type="notation:ConnectorStyle"/>
       <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
-      <bendpoints xsi:type="notation:RelativeBendpoints" points="[11, -10, 35, 188]$[108, -110, 132, 88]$[-5, -184, 19, 14]"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[9, -4, -27, 149]$[154, -92, 118, 61]$[40, -151, 4, 2]"/>
       <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.9312977,0.12676056)"/>
       <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7053942,0.9902439)"/>
     </edges>
-    <edges type="4001" element="/0/@viewItems.17" source="/1/@children.4" target="/1/@children.3">
+    <edges type="4001" element="/0/@viewItems.17" source="/1/@children.3" target="/1/@children.4">
       <children type="6001">
-        <layoutConstraint xsi:type="notation:Location" x="36" y="51"/>
+        <layoutConstraint xsi:type="notation:Location" x="-55" y="-64"/>
       </children>
       <styles xsi:type="notation:ConnectorStyle"/>
       <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
-      <bendpoints xsi:type="notation:RelativeBendpoints" points="[9, -4, -51, 168]$[166, -109, 106, 63]$[67, -168, 7, 4]"/>
-      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.9389313,0.36619717)"/>
-      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.80497926,0.9804878)"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[14, 8, 86, -174]$[133, 67, 205, -115]$[-48, 169, 24, -13]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.79253113,0.96585363)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.8167939,0.45070422)"/>
     </edges>
     <edges type="4001" element="/0/@viewItems.18" source="/1/@children.4" target="/1/@children.5">
       <children type="6001">
