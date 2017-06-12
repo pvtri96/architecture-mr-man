@@ -70,6 +70,7 @@
         <elements href="views/Transaction%20Module.asview#/0/@viewItems.11"/>
         <elements href="views/Transaction%20Module.asview#/0/@viewItems.12"/>
         <elements href="views/Transaction%20Module.asview#/0/@viewItems.13"/>
+
       </elementTypes>
     </typeCategories>
     <typeCategories name="DEFAULT_CATEGORY" perspective="Dynamic"/>
