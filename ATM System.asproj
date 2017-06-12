@@ -46,12 +46,12 @@
       </technicalConstraintContainer>
     </architecturalDriversSpec>
     <folderContainer>
-      <folders>
+      <folders/>
+      <folders perspective="Dynamic">
         <viewInfos title="Components and Connectors">
           <view href="views/Components%20and%20Connectors.asview#/0"/>
         </viewInfos>
       </folders>
-      <folders perspective="Dynamic"/>
       <folders perspective="Physical"/>
     </folderContainer>
     <mappingContainer/>
