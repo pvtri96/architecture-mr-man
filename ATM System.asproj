@@ -63,7 +63,15 @@
     <assignmentContainer/>
   </model:ArchitectureStudioProject>
   <model:TypeRepository name="CUSTOM">
-    <typeCategories name="DEFAULT_CATEGORY"/>
+    <typeCategories name="DEFAULT_CATEGORY">
+      <elementTypes name="Multi Class" description="Multi class" icon="images\Static\Multi Class.gif">
+        <visualization path="images\Static\Multi Class.svg"/>
+        <elements href="views/Transaction%20Module.asview#/0/@viewItems.10"/>
+        <elements href="views/Transaction%20Module.asview#/0/@viewItems.11"/>
+        <elements href="views/Transaction%20Module.asview#/0/@viewItems.12"/>
+        <elements href="views/Transaction%20Module.asview#/0/@viewItems.13"/>
+      </elementTypes>
+    </typeCategories>
     <typeCategories name="DEFAULT_CATEGORY" perspective="Dynamic"/>
     <typeCategories name="DEFAULT_CATEGORY" perspective="Physical"/>
   </model:TypeRepository>
