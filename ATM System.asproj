@@ -19,6 +19,7 @@
         <useCases id="UC08" title="Print Receipt" entities="/0/@architecturalDriversSpec/@useCaseEntityContainer/@useCaseEntities.0 /0/@architecturalDriversSpec/@useCaseEntityContainer/@useCaseEntities.1 /0/@architecturalDriversSpec/@useCaseEntityContainer/@useCaseEntities.3" description="The ATM will provide the customer with a printed receipt for each successful transaction" preconditions="Each successful transaction" postconditions="Showing the date, time, machine location, type of transaction, account(s), amount and ending and available balance(s) of the affected account"/>
         <useCases id="UC09" title="Validate PIN" entities="/0/@architecturalDriversSpec/@useCaseEntityContainer/@useCaseEntities.0 /0/@architecturalDriversSpec/@useCaseEntityContainer/@useCaseEntities.1 /0/@architecturalDriversSpec/@useCaseEntityContainer/@useCaseEntities.3" description="When the bank reports that the customer's transaction is disapproved due to an invalid PIN, the transaction will be failed" preconditions="ATM card is able to validate successfully" primaryFlow="1. The customer required to re-enter the PIN&#xD;&#xA;2. The original request is sent to the bank again&#xD;&#xA;3. If the bank now approves the transaction or disapproves it for some other reasons&#xD;&#xA;4. The original use case is continued; otherwise the process of re-entering the PIN is repeated&#xD;&#xA;4. Once the PIN is successfully re-entered, it's used for both the current transaction and all subsequent transaction in the session.&#xD;&#xA;5. If the customer fails three times to enter the correct PIN, the card is permanently retained, a screen is displayed informing the customer of this and suggesting customer contact the bank, and the entire customer session is aborted" alternateFlows="If the customer presses Cancel instead of re-entering PIN, the original transaction is cancelled"/>
         <useCases id="UC10" title="Send message" entities="/0/@architecturalDriversSpec/@useCaseEntityContainer/@useCaseEntities.1 /0/@architecturalDriversSpec/@useCaseEntityContainer/@useCaseEntities.3" description="The bank will send a message after the transaction was physically completed (cash dispensed or envelope accepted)" preconditions="2. ATM card is able to validate successfully&#xD;&#xA;1. The transaction is physically completed by the bank" primaryFlow="1. Customer request a transaction with the ATM&#xD;&#xA;2. The customer completed all the step requested by the ATM&#xD;&#xA;3. The ATM make a request to the server.&#xD;&#xA;4. After the bank completed the transaction, it will send back the message to the ATM"/>
+
       </useCaseContainer>
       <qualityAttributeContainer>
         <qualityAttributes id="QA02" title="The ATM network has to be available 24 hours a day" qualityAttribute="Availability" stakeholderRole="" sourceOfStimulus="Internal of system" environment="Normal operation" architectureElements="Communication channels" systemResponse="Continue normal" responseMeasure="Available 24 hours/day" stimulus="No response"/>
@@ -45,14 +46,18 @@
     </architecturalDriversSpec>
     <folderContainer>
       <folders>
+        <viewInfos title="Transaction Module">
+          <view href="views/Transaction%20Module.asview#/0"/>
+        </viewInfos>
+        <viewInfos title="Validation Module">
+          <view href="views/Validation%20Module.asview#/0"/>
+        </viewInfos>
+      </folders>
+      <folders perspective="Dynamic">
         <viewInfos title="Components and Connectors">
           <view href="views/Components%20and%20Connectors.asview#/0"/>
         </viewInfos>
-        <viewInfos title="Transactions">
-          <view href="views/Transactions.asview#/0"/>
-        </viewInfos>
       </folders>
-      <folders perspective="Dynamic"/>
       <folders perspective="Physical"/>
     </folderContainer>
     <mappingContainer/>
