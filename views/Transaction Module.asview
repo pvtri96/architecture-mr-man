@@ -29,6 +29,18 @@
     <viewItems xsi:type="model:Relationship" source="/0/@viewItems.5" target="/0/@viewItems.1">
       <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@relationshipTypes.0"/>
     </viewItems>
+    <viewItems xsi:type="model:Element" name="Transfer class">
+      <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="Withdraw class">
+      <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="Inquiry class">
+      <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="Deposit class">
+      <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
+    </viewItems>
     <viewInfo href="../ATM%20System.asproj#/0/@folderContainer/@folders.0/@viewInfos.1"/>
   </model:View>
   <notation:Diagram type="ArchitectureStudio" element="/0" name="Transactions" measurementUnit="Pixel">
@@ -61,6 +73,26 @@
       <children type="5001"/>
       <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
       <layoutConstraint xsi:type="notation:Bounds" x="552" y="72"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.10">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="552" y="96" width="97" height="49"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.11">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="396" y="96" width="97" height="49"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.12">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="240" y="96" width="97" height="49"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.13">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="96" y="96" width="97" height="49"/>
     </children>
     <styles xsi:type="notation:DiagramStyle"/>
     <edges type="4001" element="/0/@viewItems.6" source="/1/@children.2" target="/1/@children.1">
