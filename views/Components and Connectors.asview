@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://architecturestudio_project_model/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation">
   <model:View rationale="">
-    <viewItems xsi:type="model:Element" name="Customer Interface" responsibilities="" sRelationships="/0/@viewItems.14 /0/@viewItems.20" tRelationships="/0/@viewItems.8 /0/@viewItems.19">
+    <viewItems xsi:type="model:Element" name="Customer Interface" responsibilities="Rendering Customer graphic user interface (GUI)." sRelationships="/0/@viewItems.14 /0/@viewItems.20" tRelationships="/0/@viewItems.8 /0/@viewItems.19">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Card Reader" sRelationships="/0/@viewItems.7" tRelationships="/0/@viewItems.13">
+    <viewItems xsi:type="model:Element" name="Card Reader" responsibilities="Reading the card information include: Card ID, Expired Date, Card Barcode.&#xD;&#xA;Accept or Reject card with the Card status." sRelationships="/0/@viewItems.7" tRelationships="/0/@viewItems.13">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Bank system" sRelationships="/0/@viewItems.11 /0/@viewItems.17" tRelationships="/0/@viewItems.10 /0/@viewItems.16">
+    <viewItems xsi:type="model:Element" name="Bank system" responsibilities="Providing information for validating and initiating transaction through APIs." sRelationships="/0/@viewItems.11 /0/@viewItems.17" tRelationships="/0/@viewItems.10 /0/@viewItems.16">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.3"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="ATM Control" sRelationships="/0/@viewItems.10 /0/@viewItems.12 /0/@viewItems.16 /0/@viewItems.18" tRelationships="/0/@viewItems.9 /0/@viewItems.11 /0/@viewItems.15 /0/@viewItems.17">
+    <viewItems xsi:type="model:Element" name="ATM Controller" responsibilities="Controlling the ATM data flow, include: validation Card information and initiate Transaction." sRelationships="/0/@viewItems.10 /0/@viewItems.12 /0/@viewItems.16 /0/@viewItems.18" tRelationships="/0/@viewItems.9 /0/@viewItems.11 /0/@viewItems.15 /0/@viewItems.17">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="ATM Transaction" sRelationships="/0/@viewItems.15 /0/@viewItems.19" tRelationships="/0/@viewItems.14 /0/@viewItems.18">
+    <viewItems xsi:type="model:Element" name="ATM Transaction" responsibilities="Checking and initiating Transaction." sRelationships="/0/@viewItems.15 /0/@viewItems.19" tRelationships="/0/@viewItems.14 /0/@viewItems.18">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Group" name="ATM System"/>
-    <viewItems xsi:type="model:Element" name="ATM Card Validation" sRelationships="/0/@viewItems.8 /0/@viewItems.9 /0/@viewItems.13" tRelationships="/0/@viewItems.7 /0/@viewItems.12 /0/@viewItems.20">
+    <viewItems xsi:type="model:Group" name="ATM System" responsibilities=""/>
+    <viewItems xsi:type="model:Element" name="ATM Card Validation" responsibilities="Validating ATM Card information" sRelationships="/0/@viewItems.8 /0/@viewItems.9 /0/@viewItems.13" tRelationships="/0/@viewItems.7 /0/@viewItems.12 /0/@viewItems.20">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
     <viewItems xsi:type="model:Relationship" name="1.1 Insert Card" source="/0/@viewItems.1" target="/0/@viewItems.6">
