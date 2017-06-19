@@ -10,7 +10,7 @@
     <viewItems xsi:type="model:Element" name="Bank system" sRelationships="/0/@viewItems.11 /0/@viewItems.17" tRelationships="/0/@viewItems.10 /0/@viewItems.16">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.3"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="ATM Control" sRelationships="/0/@viewItems.10 /0/@viewItems.12 /0/@viewItems.16 /0/@viewItems.18" tRelationships="/0/@viewItems.9 /0/@viewItems.11 /0/@viewItems.15 /0/@viewItems.17">
+    <viewItems xsi:type="model:Element" name="ATM Control" sRelationships="/0/@viewItems.10 /0/@viewItems.12 /0/@viewItems.16 /0/@viewItems.18" tRelationships="/0/@viewItems.9 /0/@viewItems.11 /0/@viewItems.15 /0/@viewItems.17 /0/@viewItems.22">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
     <viewItems xsi:type="model:Element" name="ATM Transaction" sRelationships="/0/@viewItems.15 /0/@viewItems.19" tRelationships="/0/@viewItems.14 /0/@viewItems.18">
@@ -62,13 +62,19 @@
     <viewItems xsi:type="model:Relationship" name="1.2 Enter PIN" source="/0/@viewItems.0" target="/0/@viewItems.6">
       <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@relationshipTypes.0"/>
     </viewItems>
+    <viewItems xsi:type="model:Element" name="Operator" sRelationships="/0/@viewItems.22">
+      <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.3"/>
+    </viewItems>
+    <viewItems xsi:type="model:Relationship" name="Turn on/off " source="/0/@viewItems.21" target="/0/@viewItems.3">
+      <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@relationshipTypes.1"/>
+    </viewItems>
     <viewInfo href="../ATM%20System.asproj#/0/@folderContainer/@folders.1/@viewInfos.0"/>
   </model:View>
   <notation:Diagram type="ArchitectureStudio" element="/0" name="C&amp;C" measurementUnit="Pixel">
     <children type="2002" element="/0/@viewItems.5">
       <children type="5002"/>
       <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
-      <layoutConstraint xsi:type="notation:Bounds" x="24" y="288" width="841" height="409"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="24" y="300" width="841" height="409"/>
     </children>
     <children type="2001" element="/0/@viewItems.0">
       <children type="5001"/>
@@ -99,6 +105,11 @@
       <children type="5001"/>
       <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
       <layoutConstraint xsi:type="notation:Bounds" x="348" y="432"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.21">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="924" y="324"/>
     </children>
     <styles xsi:type="notation:DiagramStyle"/>
     <edges type="4001" element="/0/@viewItems.7" source="/1/@children.2" target="/1/@children.6">
@@ -239,6 +250,16 @@
       <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, -11, 0, -12]$[-7, -11, -7, -12]"/>
       <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.53435117,0.014084507)"/>
       <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.13740458,0.53521127)"/>
+    </edges>
+    <edges type="4001" element="/0/@viewItems.22" source="/1/@children.7" target="/1/@children.4">
+      <children type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-3" y="16"/>
+      </children>
+      <styles xsi:type="notation:ConnectorStyle"/>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[-6, -2, 161, 0]$[-163, -3, 4, -1]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.06363636,0.5507246)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.9694657,0.49295774)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>
