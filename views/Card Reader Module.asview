@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://architecturestudio_project_model/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation">
   <model:View>
-    <viewItems xsi:type="model:Element" name="Card Reader Module">
-      <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.1"/>
-    </viewItems>
     <viewItems xsi:type="model:Element" name="Card Reader Validator">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
     <viewItems xsi:type="model:Element" name="CardReaderValidatorClasses">
       <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
     </viewItems>
+    <viewItems xsi:type="model:Group" name="Card Reader Module"/>
     <viewInfo href="../ATM%20System.asproj#/0/@folderContainer/@folders.0/@viewInfos.2"/>
   </model:View>
   <notation:Diagram type="ArchitectureStudio" element="/0" name="Card Header Module" measurementUnit="Pixel">
+    <children type="2002" element="/0/@viewItems.2">
+      <children type="5002"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="24" y="12" width="385" height="313"/>
+    </children>
     <children type="2001" element="/0/@viewItems.0">
       <children type="5001"/>
       <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
-      <layoutConstraint xsi:type="notation:Bounds" x="120" y="48" width="373" height="241"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="144" y="96" width="145" height="97"/>
     </children>
     <children type="2001" element="/0/@viewItems.1">
       <children type="5001"/>
       <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
-      <layoutConstraint xsi:type="notation:Bounds" x="240" y="120" width="145" height="97"/>
-    </children>
-    <children type="2001" element="/0/@viewItems.2">
-      <children type="5001"/>
-      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
-      <layoutConstraint xsi:type="notation:Bounds" x="252" y="144"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="156" y="120"/>
     </children>
     <styles xsi:type="notation:DiagramStyle"/>
   </notation:Diagram>
