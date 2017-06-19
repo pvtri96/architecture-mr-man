@@ -51,8 +51,8 @@
         <viewInfos title="Transaction Module">
           <view href="views/Transaction%20Module.asview#/0"/>
         </viewInfos>
-        <viewInfos title="Customer Interface">
-          <view href="views/Customer%20Interface.asview#/0"/>
+        <viewInfos title="Card Reader Module">
+          <view href="views/Card%20Reader%20Module.asview#/0"/>
         </viewInfos>
       </folders>
       <folders perspective="Dynamic">
@@ -69,13 +69,19 @@
     <typeCategories name="DEFAULT_CATEGORY">
       <elementTypes name="Multi Class" description="Multi class" icon="images\Static\Multi Class.gif">
         <visualization path="images\Static\Multi Class.svg"/>
-        <elements href="views/Transaction%20Module.asview#/0/@viewItems.10"/>
-        <elements href="views/Transaction%20Module.asview#/0/@viewItems.11"/>
-        <elements href="views/Transaction%20Module.asview#/0/@viewItems.12"/>
-        <elements href="views/Transaction%20Module.asview#/0/@viewItems.13"/>
-        <elements href="views/Customer%20Interface.asview#/0/@viewItems.3"/>
-        <elements href="views/Customer%20Interface.asview#/0/@viewItems.4"/>
+        <elements href="views/Card%20Reader%20Module.asview#/0/@viewItems.2"/>
       </elementTypes>
+      <elementTypes name="Abstract" description="Abstract of many classes" icon="images\Static\Abstract.gif">
+        <visualization path="images\Static\Abstract.svg"/>
+        <elements href="views/Transaction%20Module.asview#/0/@viewItems.9"/>
+      </elementTypes>
+      <relationshipTypes name="extends" description="A extends B" icon="images\Static\extends.gif">
+        <visualization sourceDecorator="" targetDecorator="filledArrowWide" lineStyle="2" colorValue="1"/>
+        <relationships href="views/Transaction%20Module.asview#/0/@viewItems.10"/>
+        <relationships href="views/Transaction%20Module.asview#/0/@viewItems.11"/>
+        <relationships href="views/Transaction%20Module.asview#/0/@viewItems.12"/>
+        <relationships href="views/Transaction%20Module.asview#/0/@viewItems.13"/>
+      </relationshipTypes>
     </typeCategories>
     <typeCategories name="DEFAULT_CATEGORY" perspective="Dynamic"/>
     <typeCategories name="DEFAULT_CATEGORY" perspective="Physical"/>
