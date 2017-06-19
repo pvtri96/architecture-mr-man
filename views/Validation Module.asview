@@ -4,17 +4,11 @@
     <viewItems xsi:type="model:Element">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="CardValidator" responsibilities="Validation card signature to be able to access ATM dashboard" provides="Check card" requires="Insert the card" tRelationships="/0/@viewItems.5">
+    <viewItems xsi:type="model:Element" name="CardValidator" responsibilities="Validation card signature to be able to access ATM dashboard" provides="Check card" requires="Insert the card" tRelationships="/0/@viewItems.3">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="PINValidator" responsibilities="When the bank reports that the customer's transaction is disapproved due to an invalid PIN, the transaction will be failed" provides="Check PIN" requires="Input the PIN" sRelationships="/0/@viewItems.5" tRelationships="/0/@viewItems.4">
+    <viewItems xsi:type="model:Element" name="PINValidator" responsibilities="When the bank reports that the customer's transaction is disapproved due to an invalid PIN, the transaction will be failed" provides="Check PIN" requires="Input the PIN" sRelationships="/0/@viewItems.3">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
-    </viewItems>
-    <viewItems xsi:type="model:Element" name="AccountValidator" responsibilities="Validation user account to be able to perform one or more transactions" provides="Check Account" requires="Make a transaction" sRelationships="/0/@viewItems.4">
-      <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
-    </viewItems>
-    <viewItems xsi:type="model:Relationship" responsibilities="Step AccountValidator is performed when step PINValidator succeeded, by contrast, step AccountValidator is not done when the step PINValidator has not been successful" source="/0/@viewItems.3" target="/0/@viewItems.2">
-      <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@relationshipTypes.0"/>
     </viewItems>
     <viewItems xsi:type="model:Relationship" responsibilities="Step PINValidator is performed when step CardValidator succeeded, by contrast, step PINValidator is not done when the step CardValidator has not been successful" source="/0/@viewItems.2" target="/0/@viewItems.1">
       <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@relationshipTypes.0"/>
@@ -25,17 +19,14 @@
     <viewItems xsi:type="model:Element" name="PINValidatorClasses" responsibilities="The classes contain PIN validator" provides="PIN Validator classes" requires="Input the PIN">
       <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="AccountValidatorClasses" responsibilities="The classes contain Account validator" provides="Account Validator classes" requires="Make a transaction">
-      <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
-    </viewItems>
     <viewItems xsi:type="model:Group" name="Validation Module" responsibilities="Validation"/>
     <viewInfo href="../ATM%20System.asproj#/0/@folderContainer/@folders.0/@viewInfos.0"/>
   </model:View>
   <notation:Diagram type="ArchitectureStudio" element="/0" name="Validation Package" measurementUnit="Pixel">
-    <children type="2002" element="/0/@viewItems.9">
+    <children type="2002" element="/0/@viewItems.6">
       <children type="5002"/>
       <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
-      <layoutConstraint xsi:type="notation:Bounds" x="120" y="36" width="805" height="361"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="120" y="84" width="637" height="277"/>
     </children>
     <children type="2001" element="/0/@viewItems.0">
       <children type="5001"/>
@@ -52,38 +43,18 @@
       <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
       <layoutConstraint xsi:type="notation:Bounds" x="204" y="168" width="169" height="126"/>
     </children>
-    <children type="2001" element="/0/@viewItems.3">
-      <children type="5001"/>
-      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
-      <layoutConstraint xsi:type="notation:Bounds" x="696" y="168" width="169" height="133"/>
-    </children>
-    <children type="2001" element="/0/@viewItems.6">
+    <children type="2001" element="/0/@viewItems.4">
       <children type="5001"/>
       <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
       <layoutConstraint xsi:type="notation:Bounds" x="228" y="204" width="121" height="73"/>
     </children>
-    <children type="2001" element="/0/@viewItems.7">
+    <children type="2001" element="/0/@viewItems.5">
       <children type="5001"/>
       <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
       <layoutConstraint xsi:type="notation:Bounds" x="468" y="204" width="145" height="73"/>
     </children>
-    <children type="2001" element="/0/@viewItems.8">
-      <children type="5001"/>
-      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
-      <layoutConstraint xsi:type="notation:Bounds" x="720" y="204" width="133" height="73"/>
-    </children>
     <styles xsi:type="notation:DiagramStyle"/>
-    <edges type="4001" element="/0/@viewItems.4" source="/1/@children.4" target="/1/@children.2">
-      <children type="6001">
-        <layoutConstraint xsi:type="notation:Location" y="40"/>
-      </children>
-      <styles xsi:type="notation:ConnectorStyle"/>
-      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
-      <bendpoints xsi:type="notation:RelativeBendpoints" points="[-1, 0, 111, 0]$[-108, -1, 4, -1]"/>
-      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.00591716,0.48120302)"/>
-      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.9704142,0.48872182)"/>
-    </edges>
-    <edges type="4001" element="/0/@viewItems.5" source="/1/@children.2" target="/1/@children.3">
+    <edges type="4001" element="/0/@viewItems.3" source="/1/@children.2" target="/1/@children.3">
       <children type="6001">
         <layoutConstraint xsi:type="notation:Location" y="40"/>
       </children>
