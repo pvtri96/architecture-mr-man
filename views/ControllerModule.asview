@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://architecturestudio_project_model/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation">
+  <model:View>
+    <viewItems xsi:type="model:Group" name="ATM Controller Module"/>
+    <viewItems xsi:type="model:Element" name="Transaction Controller" tRelationships="/0/@viewItems.6">
+      <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="Validation Controller" tRelationships="/0/@viewItems.5">
+      <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="Admin Controller" sRelationships="/0/@viewItems.7">
+      <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="ATMSystemController" sRelationships="/0/@viewItems.5 /0/@viewItems.6" tRelationships="/0/@viewItems.7">
+      <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
+    </viewItems>
+    <viewItems xsi:type="model:Relationship" source="/0/@viewItems.4" target="/0/@viewItems.2">
+      <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@relationshipTypes.1"/>
+    </viewItems>
+    <viewItems xsi:type="model:Relationship" source="/0/@viewItems.4" target="/0/@viewItems.1">
+      <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@relationshipTypes.1"/>
+    </viewItems>
+    <viewItems xsi:type="model:Relationship" source="/0/@viewItems.3" target="/0/@viewItems.4">
+      <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@relationshipTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="Admin Controller Classes">
+      <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="Transaction Controller Classes">
+      <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="Validation Controller Classes">
+      <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="System Controller Classes">
+      <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
+    </viewItems>
+    <viewInfo href="../ATM%20System.asproj#/0/@folderContainer/@folders.0/@viewInfos.2"/>
+  </model:View>
+  <notation:Diagram type="ArchitectureStudio" element="/0" name="ControllerModule" measurementUnit="Pixel">
+    <children type="2002" element="/0/@viewItems.0">
+      <children type="5002"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="228" y="36" width="913" height="505"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.1">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="576" y="96" width="205" height="145"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.2">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="276" y="96" width="193" height="145"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.3">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="888" y="96" width="193" height="145"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.4">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="576" y="348" width="205" height="157"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.8">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="924" y="144"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.9">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="600" y="144"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.10">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="300" y="144"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.11">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="624" y="408"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+    <edges type="4001" element="/0/@viewItems.5" source="/1/@children.4" target="/1/@children.2">
+      <children type="6001">
+        <layoutConstraint xsi:type="notation:Location" y="40"/>
+      </children>
+      <styles xsi:type="notation:ConnectorStyle"/>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.05529954,0.6369427)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.83431953,0.78512394)"/>
+    </edges>
+    <edges type="4001" element="/0/@viewItems.6" source="/1/@children.4" target="/1/@children.1">
+      <children type="6001">
+        <layoutConstraint xsi:type="notation:Location" y="40"/>
+      </children>
+      <styles xsi:type="notation:ConnectorStyle"/>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[1, -34, 0, -34]$[-1, -34, -2, -34]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.49268293,0.050955415)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.47804877,0.9724138)"/>
+    </edges>
+    <edges type="4001" element="/0/@viewItems.7" source="/1/@children.3" target="/1/@children.4">
+      <children type="6001">
+        <layoutConstraint xsi:type="notation:Location" y="40"/>
+      </children>
+      <styles xsi:type="notation:ConnectorStyle"/>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 11, 0, 10]$[-2, 2, -2, 1]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.01183432,0.91735536)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.94009215,0.656051)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
