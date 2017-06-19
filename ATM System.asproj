@@ -51,6 +51,9 @@
         <viewInfos title="Transaction Module">
           <view href="views/Transaction%20Module.asview#/0"/>
         </viewInfos>
+        <viewInfos title="Card Reader Module">
+          <view href="views/Card%20Reader%20Module.asview#/0"/>
+        </viewInfos>
       </folders>
       <folders perspective="Dynamic">
         <viewInfos title="Components and Connectors">
@@ -66,10 +69,11 @@
     <typeCategories name="DEFAULT_CATEGORY">
       <elementTypes name="Multi Class" description="Multi class" icon="images\Static\Multi Class.gif">
         <visualization path="images\Static\Multi Class.svg"/>
-        <elements href="views/Transaction%20Module.asview#/0/@viewItems.5"/>
-        <elements href="views/Transaction%20Module.asview#/0/@viewItems.6"/>
-        <elements href="views/Transaction%20Module.asview#/0/@viewItems.7"/>
-        <elements href="views/Transaction%20Module.asview#/0/@viewItems.8"/>
+        <elements href="views/Transaction%20Module.asview#/0/@viewItems.10"/>
+        <elements href="views/Transaction%20Module.asview#/0/@viewItems.11"/>
+        <elements href="views/Transaction%20Module.asview#/0/@viewItems.12"/>
+        <elements href="views/Transaction%20Module.asview#/0/@viewItems.13"/>
+        <elements href="views/Card%20Reader%20Module.asview#/0/@viewItems.2"/>
       </elementTypes>
       <elementTypes name="Abstract" description="Abstract of many classes" icon="images\Static\Abstract.gif">
         <visualization path="images\Static\Abstract.svg"/>
