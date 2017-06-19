@@ -51,6 +51,9 @@
         <viewInfos title="Transaction Module">
           <view href="views/Transaction%20Module.asview#/0"/>
         </viewInfos>
+        <viewInfos title="Customer Interface">
+          <view href="views/Customer%20Interface.asview#/0"/>
+        </viewInfos>
       </folders>
       <folders perspective="Dynamic">
         <viewInfos title="Components and Connectors">
@@ -70,6 +73,8 @@
         <elements href="views/Transaction%20Module.asview#/0/@viewItems.11"/>
         <elements href="views/Transaction%20Module.asview#/0/@viewItems.12"/>
         <elements href="views/Transaction%20Module.asview#/0/@viewItems.13"/>
+        <elements href="views/Customer%20Interface.asview#/0/@viewItems.3"/>
+        <elements href="views/Customer%20Interface.asview#/0/@viewItems.4"/>
       </elementTypes>
     </typeCategories>
     <typeCategories name="DEFAULT_CATEGORY" perspective="Dynamic"/>
