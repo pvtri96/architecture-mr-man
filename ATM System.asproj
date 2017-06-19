@@ -71,6 +71,17 @@
         <elements href="views/Transaction%20Module.asview#/0/@viewItems.7"/>
         <elements href="views/Transaction%20Module.asview#/0/@viewItems.8"/>
       </elementTypes>
+      <elementTypes name="Abstract" description="Abstract of many classes" icon="images\Static\Abstract.gif">
+        <visualization path="images\Static\Abstract.svg"/>
+        <elements href="views/Transaction%20Module.asview#/0/@viewItems.9"/>
+      </elementTypes>
+      <relationshipTypes name="extends" description="A extends B" icon="images\Static\extends.gif">
+        <visualization sourceDecorator="" targetDecorator="filledArrowWide" lineStyle="2" colorValue="1"/>
+        <relationships href="views/Transaction%20Module.asview#/0/@viewItems.10"/>
+        <relationships href="views/Transaction%20Module.asview#/0/@viewItems.11"/>
+        <relationships href="views/Transaction%20Module.asview#/0/@viewItems.12"/>
+        <relationships href="views/Transaction%20Module.asview#/0/@viewItems.13"/>
+      </relationshipTypes>
     </typeCategories>
     <typeCategories name="DEFAULT_CATEGORY" perspective="Dynamic"/>
     <typeCategories name="DEFAULT_CATEGORY" perspective="Physical"/>
