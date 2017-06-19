@@ -54,6 +54,9 @@
         <viewInfos title="Card Reader Module">
           <view href="views/Card%20Reader%20Module.asview#/0"/>
         </viewInfos>
+        <viewInfos title="Customer Interface">
+          <view href="views/Customer%20Interface.asview#/0"/>
+        </viewInfos>
       </folders>
       <folders perspective="Dynamic">
         <viewInfos title="Components and Connectors">
