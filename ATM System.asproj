@@ -69,7 +69,11 @@
           <view href="views/System%20Context%20Diagram.asview#/0"/>
         </viewInfos>
       </folders>
-      <folders perspective="Physical"/>
+      <folders perspective="Physical">
+        <viewInfos title="Allocation">
+          <view href="views/Allocation.asview#/0"/>
+        </viewInfos>
+      </folders>
     </folderContainer>
     <mappingContainer/>
     <assignmentContainer/>
@@ -90,6 +94,27 @@
       </relationshipTypes>
     </typeCategories>
     <typeCategories name="DEFAULT_CATEGORY" perspective="Dynamic"/>
-    <typeCategories name="DEFAULT_CATEGORY" perspective="Physical"/>
+    <typeCategories name="DEFAULT_CATEGORY" perspective="Physical">
+      <elementTypes name="Adapter" description="A adapter." icon="images\Physical\Adapter.gif">
+        <visualization path="images\Physical\Adapter.svg"/>
+        <elements href="views/Allocation.asview#/0/@viewItems.1"/>
+      </elementTypes>
+      <elementTypes name="Firewall" description="A firewall." icon="images\Physical\Firewall.gif">
+        <visualization path="images\Physical\Firewall.svg"/>
+        <elements href="views/Allocation.asview#/0/@viewItems.2"/>
+      </elementTypes>
+      <elementTypes name="Hardware" description="A hardware." icon="images\Physical\Hardware.gif">
+        <visualization path="images\Physical\Hardware.svg"/>
+      </elementTypes>
+      <relationshipTypes name="Protocol" description="A Communication Protocol." icon="images\Physical\Protocol.gif">
+        <visualization sourceDecorator="" targetDecorator="" lineStyle="1"/>
+        <relationships href="views/Allocation.asview#/0/@viewItems.11"/>
+        <relationships href="views/Allocation.asview#/0/@viewItems.12"/>
+        <relationships href="views/Allocation.asview#/0/@viewItems.13"/>
+        <relationships href="views/Allocation.asview#/0/@viewItems.14"/>
+        <relationships href="views/Allocation.asview#/0/@viewItems.15"/>
+        <relationships href="views/Allocation.asview#/0/@viewItems.16"/>
+      </relationshipTypes>
+    </typeCategories>
   </model:TypeRepository>
 </xmi:XMI>
