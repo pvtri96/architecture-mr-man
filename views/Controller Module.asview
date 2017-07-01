@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://architecturestudio_project_model/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation">
   <model:View>
-    <viewItems xsi:type="model:Group" name="ATM Controller Module">
-      <tMapping href="../ATM%20System.asproj#/0/@mappingContainer/@mappings.2"/>
-    </viewItems>
-    <viewItems xsi:type="model:Element" name="Transaction Controller" tRelationships="/0/@viewItems.6">
+    <viewItems xsi:type="model:Group" name="ATM Controller Module"/>
+    <viewItems xsi:type="model:Element" name="Transaction Controller" responsibilities="Transaction Controller is a package which stores Transaction Controller Classes." tRelationships="/0/@viewItems.6">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Validation Controller" tRelationships="/0/@viewItems.5">
+    <viewItems xsi:type="model:Element" name="Validation Controller" responsibilities="Validation Controller is a package which stores Validation Controller Classes." tRelationships="/0/@viewItems.5">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Admin Controller" sRelationships="/0/@viewItems.7">
+    <viewItems xsi:type="model:Element" name="Admin Controller" responsibilities="The Admin Controller is a package which stores the Admin Controller Classes." sRelationships="/0/@viewItems.7">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="ATMSystemController" sRelationships="/0/@viewItems.5 /0/@viewItems.6" tRelationships="/0/@viewItems.7">
+    <viewItems xsi:type="model:Element" name="ATMSystemController" responsibilities="The ATM System Controller is a package which stores the System Controller Classes." sRelationships="/0/@viewItems.5 /0/@viewItems.6" tRelationships="/0/@viewItems.7">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
     <viewItems xsi:type="model:Relationship" source="/0/@viewItems.4" target="/0/@viewItems.2">
@@ -25,16 +23,16 @@
     <viewItems xsi:type="model:Relationship" source="/0/@viewItems.3" target="/0/@viewItems.4">
       <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@relationshipTypes.0"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Admin Controller Classes">
+    <viewItems xsi:type="model:Element" name="Admin Controller Classes" responsibilities="The Admin Controller Classes are called when receive requests from the ATM System Controller and the administrator can start and stop services or system.">
       <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Transaction Controller Classes">
+    <viewItems xsi:type="model:Element" name="Transaction Controller Classes" responsibilities="Transaction Controller Classes are called when the customers require transaction requests. The customers make transactions like widthrawl, deposit, transfer money or check balance inquiry, the Transaction Controller Classes receive and send those requests to the ATM System Controller which will connect to the database to make transactions.&#xD;&#xA;It will also return messages when finish session.">
       <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Validation Controller Classes">
+    <viewItems xsi:type="model:Element" name="Validation Controller Classes" responsibilities="Validation Controller Classes are called when customers insert an ATM card or enter PIN. It receive those requests and send validation requests to the ATM System Controller which connect to database to validate whether the card or PIN is valid or not.&#xD;&#xA;After validation, those classes will receive messages from the ATM System Controller and show it to customer." provides="">
       <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="System Controller Classes">
+    <viewItems xsi:type="model:Element" name="System Controller Classes" responsibilities="The System Controller Classes are called the ">
       <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
     </viewItems>
     <viewInfo href="../ATM%20System.asproj#/0/@folderContainer/@folders.0/@viewInfos.2"/>
