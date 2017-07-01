@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://architecturestudio_project_model/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation">
   <model:View rationale="">
+    <tMapping href="../ATM%20System.asproj#/0/@mappingContainer/@mappings.3"/>
     <viewItems xsi:type="model:Element">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>

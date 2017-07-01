@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://architecturestudio_project_model/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation">
+  <model:View rationale="">
+    <viewItems xsi:type="model:Element" name="ATM" responsibilities="The ATM which allows customers to complete basic transactions without the aid of a branch representative or teller" sRelationships="/0/@viewItems.3 /0/@viewItems.4" tRelationships="/0/@viewItems.1 /0/@viewItems.2 /0/@viewItems.5">
+      <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Relationship" name="Turn the ATM On/Off" responsibilities="Turn the ATM On/Off" source="/0/@viewItems.8" target="/0/@viewItems.0">
+      <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@relationshipTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Relationship" name="Request Deposit, Inquiry, Withdraw, Transfer transaction" responsibilities="Request Deposit, Inquiry, Withdraw, Transfer transaction" source="/0/@viewItems.7" target="/0/@viewItems.0">
+      <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@relationshipTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Relationship" name="Response Deposit, Inquiry, Withdraw, Transfer transaction" responsibilities="Response Deposit, Inquiry, Withdraw, Transfer transaction" source="/0/@viewItems.0" target="/0/@viewItems.7">
+      <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@relationshipTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Relationship" name="Request Deposit, Inquiry, Withdraw, Transfer transaction, ATM card validation" responsibilities="Request Deposit, Inquiry, Withdraw, Transfer transaction, ATM card validation" source="/0/@viewItems.0" target="/0/@viewItems.6">
+      <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@relationshipTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Relationship" name="Return approval or decline of Deposit, Inquiry, Withdraw, Transfer transaction" responsibilities="Return approval or decline of Deposit, Inquiry, Withdraw, Transfer transaction" source="/0/@viewItems.6" target="/0/@viewItems.0">
+      <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@relationshipTypes.0"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="Bank" responsibilities="The bank will solve ATM request transaction and ATM validation" sRelationships="/0/@viewItems.5" tRelationships="/0/@viewItems.4">
+      <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.3"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="Customer" responsibilities="the person who will use the ATM to perform  their transaction" sRelationships="/0/@viewItems.2" tRelationships="/0/@viewItems.3">
+      <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.3"/>
+    </viewItems>
+    <viewItems xsi:type="model:Element" name="Operator" responsibilities="The ATM will have a an operator panel with a key-operated switch (located on the&#xD;&#xA;&quot;inside the bank&quot; side) that will allow an operator to start and stop the servicing of&#xD;&#xA;customers." sRelationships="/0/@viewItems.1">
+      <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.3"/>
+    </viewItems>
+    <viewInfo href="../ATM%20System.asproj#/0/@folderContainer/@folders.1/@viewInfos.1"/>
+  </model:View>
+  <notation:Diagram type="ArchitectureStudio" element="/0" name="System Context Diagram" measurementUnit="Pixel">
+    <children type="2001" element="/0/@viewItems.0">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="420" y="324"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.6">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="984" y="324"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.7">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="-12" y="324"/>
+    </children>
+    <children type="2001" element="/0/@viewItems.8">
+      <children type="5001"/>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="420" y="84"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+    <edges type="4001" element="/0/@viewItems.1" source="/1/@children.3" target="/1/@children.0">
+      <children type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-9" y="70"/>
+      </children>
+      <styles xsi:type="notation:ConnectorStyle"/>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[1, 18, -5, -170]$[2, 183, -4, -5]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.53636366,0.942029)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5132743,0.026666667)"/>
+    </edges>
+    <edges type="4001" element="/0/@viewItems.2" source="/1/@children.2" target="/1/@children.0">
+      <children type="6001">
+        <layoutConstraint xsi:type="notation:Location" y="-10"/>
+      </children>
+      <styles xsi:type="notation:ConnectorStyle"/>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[19, 1, -275, 0]$[281, -5, -13, -6]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.9727273,0.3043478)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.11504425,0.26666668)"/>
+    </edges>
+    <edges type="4001" element="/0/@viewItems.3" source="/1/@children.0" target="/1/@children.2">
+      <children type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-5" y="-18"/>
+      </children>
+      <styles xsi:type="notation:ConnectorStyle"/>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[-9, 1, 287, 0]$[-271, 10, 25, 9]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.07964602,0.6666667)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.9818182,0.6956522)"/>
+    </edges>
+    <edges type="4001" element="/0/@viewItems.4" source="/1/@children.0" target="/1/@children.1">
+      <children type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-4" y="-14"/>
+      </children>
+      <styles xsi:type="notation:ConnectorStyle"/>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[-9, 0, 254, 0]$[-256, -3, 7, -3]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.88495576,0.28)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.11818182,0.3043478)"/>
+    </edges>
+    <edges type="4001" element="/0/@viewItems.5" source="/1/@children.1" target="/1/@children.0">
+      <children type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-9" y="-17"/>
+      </children>
+      <styles xsi:type="notation:ConnectorStyle"/>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[14, 2, -248, 0]$[261, 2, -1, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.036363635,0.7246377)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.9823009,0.62666667)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
