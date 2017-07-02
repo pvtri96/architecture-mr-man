@@ -66,6 +66,9 @@
         <viewInfos title="Components and Connectors">
           <view href="views/Components%20and%20Connectors.asview#/0"/>
         </viewInfos>
+        <viewInfos title="System Context Diagram">
+          <view href="views/System%20Context%20Diagram.asview#/0"/>
+        </viewInfos>
       </folders>
       <folders perspective="Physical"/>
     </folderContainer>
