@@ -5,10 +5,10 @@
       <tMapping href="../ATM%20System.asproj#/0/@mappingContainer/@mappings.0"/>
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.1"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Keyboard Controller" tRelationships="/0/@viewItems.5">
+    <viewItems xsi:type="model:Element" name="Keyboard Controller" responsibilities="To perform an input operation on the system,ex: Enters PIN, chooses the feature,..." tRelationships="/0/@viewItems.5">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Screen Controller" sRelationships="/0/@viewItems.5">
+    <viewItems xsi:type="model:Element" name="Screen Controller" responsibilities="Shows a neccessary informations to customer on the screen" sRelationships="/0/@viewItems.5">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
     <viewItems xsi:type="model:Element" name="Keyboard Controller Class">

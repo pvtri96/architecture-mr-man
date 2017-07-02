@@ -3,16 +3,16 @@
   <model:View rationale="">
     <tMapping href="../ATM%20System.asproj#/0/@mappingContainer/@mappings.4"/>
     <viewItems xsi:type="model:Group" name="Transaction module"/>
-    <viewItems xsi:type="model:Element" name="Deposit Transaction" sRelationships="/0/@viewItems.11">
+    <viewItems xsi:type="model:Element" name="Deposit Transaction" responsibilities="To deposit a cash through ATM" requires="Input the receiver ID  &#xD;&#xA;Put the cash into the deposit box" sRelationships="/0/@viewItems.11">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Withdraw Transaction" sRelationships="/0/@viewItems.13">
+    <viewItems xsi:type="model:Element" name="Withdraw Transaction" responsibilities="Returns the cash when user enter correct neccessary informations" requires="Insert PIN The withdraw money less than the current money" sRelationships="/0/@viewItems.13">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Inquiry Transaction" sRelationships="/0/@viewItems.12">
+    <viewItems xsi:type="model:Element" name="Inquiry Transaction" responsibilities="Shows the account status" sRelationships="/0/@viewItems.12">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Transfer Transaction" sRelationships="/0/@viewItems.14">
+    <viewItems xsi:type="model:Element" name="Transfer Transaction" responsibilities="Transfers the money into the other account" provides="" requires="Input the receiver ID" sRelationships="/0/@viewItems.14">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
     <viewItems xsi:type="model:Element" name="Transfer class">
@@ -27,7 +27,7 @@
     <viewItems xsi:type="model:Element" name="Deposit classes">
       <elementType href="../ATM%20System.asproj#/1/@typeCategories.0/@elementTypes.0"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Interface Transaction" tRelationships="/0/@viewItems.13 /0/@viewItems.14">
+    <viewItems xsi:type="model:Element" name="Interface Transaction" responsibilities="This is a interface model for other modules to extend" tRelationships="/0/@viewItems.13 /0/@viewItems.14">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.0/@elementTypes.2"/>
     </viewItems>
     <viewItems xsi:type="model:Element" name="Interface classes" tRelationships="/0/@viewItems.11 /0/@viewItems.12">
