@@ -1,28 +1,59 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://architecturestudio_project_model/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation">
   <model:View rationale="">
-    <viewItems xsi:type="model:Element" name="Bank System" sRelationships="/0/@viewItems.12" tRelationships="/0/@viewItems.13">
+    <viewItems xsi:type="model:Element" name="Bank System" responsibilities="The system of the bank" provides="Request / Response with the ATM system" sRelationships="/0/@viewItems.12" tRelationships="/0/@viewItems.13">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.4"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Operator" sRelationships="/0/@viewItems.14" tRelationships="/0/@viewItems.15">
+    <viewItems xsi:type="model:Element" name="Operator" responsibilities="The operator reponsiblities to operation of the ATM system" sRelationships="/0/@viewItems.14" tRelationships="/0/@viewItems.15">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.3"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Customer" sRelationships="/0/@viewItems.8 /0/@viewItems.10" tRelationships="/0/@viewItems.9 /0/@viewItems.11">
+    <viewItems xsi:type="model:Element" name="Customer" responsibilities="The end-user, who want to use the Bank system through ATM" sRelationships="/0/@viewItems.8 /0/@viewItems.10" tRelationships="/0/@viewItems.9 /0/@viewItems.11">
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.3"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Card Reader" sRelationships="/0/@viewItems.9 /0/@viewItems.16" tRelationships="/0/@viewItems.8 /0/@viewItems.17">
+    <viewItems xsi:type="model:Element" name="Card Reader" responsibilities="The card reader is a data input device that reads data from card-shaped storage medium" provides="It has eight contact point, which must physically touch the ATM card on the reader to convey information between them. " requires="- ATM card&#xD;&#xA;- Card Reader validation component" sRelationships="/0/@viewItems.9 /0/@viewItems.16" tRelationships="/0/@viewItems.8 /0/@viewItems.17">
+      <sMapping href="../ATM%20System.asproj#/0/@mappingContainer/@mappings.1"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.0"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.1"/>
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="ATM Controller" sRelationships="/0/@viewItems.13 /0/@viewItems.15 /0/@viewItems.22 /0/@viewItems.25" tRelationships="/0/@viewItems.12 /0/@viewItems.14 /0/@viewItems.23 /0/@viewItems.24">
+    <viewItems xsi:type="model:Element" name="ATM Controller" responsibilities="The main controller, which is the end-point to interact with Bank System and handle request / response information between another component" provides="The bridge interact with Bank System and ATM system" requires="- Request / response from another component&#xD;&#xA;- Request / response to Bank System" sRelationships="/0/@viewItems.13 /0/@viewItems.15 /0/@viewItems.22 /0/@viewItems.25" tRelationships="/0/@viewItems.12 /0/@viewItems.14 /0/@viewItems.23 /0/@viewItems.24">
+      <sMapping href="../ATM%20System.asproj#/0/@mappingContainer/@mappings.2"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.12"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.13"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.14"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.15"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.16"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.17"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.18"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.19"/>
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="ATM Card Validation" sRelationships="/0/@viewItems.17 /0/@viewItems.19 /0/@viewItems.24" tRelationships="/0/@viewItems.16 /0/@viewItems.18 /0/@viewItems.25">
+    <viewItems xsi:type="model:Element" name="ATM Card Validation" responsibilities="The center validator of ATM, to validate all of the information when customer interact with system" provides="- PIN validation&#xD;&#xA;- Card validation" requires="- ATM card&#xD;&#xA;- PIN number&#xD;&#xA;- ATM Controller&#xD;&#xA;- Card Reader" sRelationships="/0/@viewItems.17 /0/@viewItems.19 /0/@viewItems.24" tRelationships="/0/@viewItems.16 /0/@viewItems.18 /0/@viewItems.25">
+      <sMapping href="../ATM%20System.asproj#/0/@mappingContainer/@mappings.3"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.2"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.3"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.4"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.20"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.21"/>
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="Customer Interface" sRelationships="/0/@viewItems.11 /0/@viewItems.18 /0/@viewItems.20" tRelationships="/0/@viewItems.10 /0/@viewItems.19 /0/@viewItems.21">
+    <viewItems xsi:type="model:Element" name="Customer Interface" responsibilities="The main Interface, which is provides the main screen for customer can interact with the ATM system" provides="- Print Receipt&#xD;&#xA;- Show message for each transaction&#xD;&#xA;- Show message for validation&#xD;&#xA;- PIN input" requires="- ATM Card" sRelationships="/0/@viewItems.11 /0/@viewItems.18 /0/@viewItems.20" tRelationships="/0/@viewItems.10 /0/@viewItems.19 /0/@viewItems.21">
+      <sMapping href="../ATM%20System.asproj#/0/@mappingContainer/@mappings.0"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.9"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.10"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.23"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.24"/>
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
-    <viewItems xsi:type="model:Element" name="ATM Transaction" sRelationships="/0/@viewItems.21 /0/@viewItems.23" tRelationships="/0/@viewItems.20 /0/@viewItems.22">
+    <viewItems xsi:type="model:Element" name="ATM Transaction" responsibilities="The transaction component,  which is process all of the transaction of the customer to withdraw, transfer, deposit and also inquiry" provides="- Withdraw Transaction&#xD;&#xA;- Deposit Transaction&#xD;&#xA;- Transfer Transaction&#xD;&#xA;- Inquiry Transaction" requires="- Information transaction&#xD;&#xA;- Request /response from ATM Controller" sRelationships="/0/@viewItems.21 /0/@viewItems.23" tRelationships="/0/@viewItems.20 /0/@viewItems.22">
+      <sMapping href="../ATM%20System.asproj#/0/@mappingContainer/@mappings.4"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.5"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.6"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.7"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.8"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.11"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.22"/>
+      <assignments href="../ATM%20System.asproj#/0/@assignmentContainer/@assignments.25"/>
       <elementType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@elementTypes.2"/>
     </viewItems>
     <viewItems xsi:type="model:Relationship" name="Insert Card" source="/0/@viewItems.2" target="/0/@viewItems.3">
