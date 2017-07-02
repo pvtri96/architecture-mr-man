@@ -28,7 +28,7 @@
     <viewItems xsi:type="model:Relationship" name="Insert Card" source="/0/@viewItems.2" target="/0/@viewItems.3">
       <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@relationshipTypes.0"/>
     </viewItems>
-    <viewItems xsi:type="model:Relationship" name="Inject/ Outject Card" source="/0/@viewItems.3" target="/0/@viewItems.2">
+    <viewItems xsi:type="model:Relationship" name="Inject/ Outject Card" responsibilities="" source="/0/@viewItems.3" target="/0/@viewItems.2">
       <relationshipType href="bundleentry://6/resources/defaultShapes.xml#//@typeCategories.1/@relationshipTypes.0"/>
     </viewItems>
     <viewItems xsi:type="model:Relationship" name="Interact" source="/0/@viewItems.2" target="/0/@viewItems.6">
